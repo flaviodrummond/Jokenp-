@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    background-image: url("./asset/jokenpo.webp");
+    background-size: cover;
+    /* Usando o background-size: cover; ele estica a imagem para ficar certinha dentro da tela */
+    display: flex;
+    /* para centralizar o nosso jogo no meio e dando alguns super poderes */
+    justify-content: center;
+    /* Alinhando na horizontal */
+    align-items: center;
+    /* Alinhando na vertical */
+    min-height: 100vh;
+    /* altura mínima da tela, será a tela toda */
+}
+
+main {
+    background-color: #ffff;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 900;
+    text-shadow: 0.1rem 0.03rem rgba(252, 0, 0, 0.911);
+}
+
+.theme {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+button {
+    padding: 10px;
+    font-size: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+.button-play {
+    margin: 25px 0 30px;
+    display: flex;
+    gap: 30px;
+    /* Para distanciar os elementos, mas só consigo fazer com isso, com o display flex na div */
+}
+
+.stone {
+    background-color: rgba(247, 58, 11, 0.918);
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.623);
+}
+
+.paper {
+    background-color: rgba(0, 0, 0, 0.877);
+}
+
+.scissors {
+    background-color: rgba(34, 34, 128, 0.911);
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.623);
+}
+
+p {
+    margin-bottom: 10px;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.your-score span {
+    color: rgb(12, 9, 201);
+    font-weight: 900;
+}
+
+.computer-score span {
+    color: rgb(245, 21, 21);
+    font-weight: 900;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;800;900&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script defer src="./script.js"></script>
+    <title>JokenPô</title>
+</head>
+
+<body>
+
+    <main>
+
+        <h1>JokenPô</h1>
+        <p class="theme">Pedra - Papel - Tesoura</p>
+
+
+        <div class="button-play">
+            <button class="stone" onclick="humanClicked('Pedra')">&#x1F44A;</button>
+            <button class="paper" onclick="humanClicked('Papel')">&#x1f590;</button>
+            <button class="scissors" onclick="humanClicked('Tesoura')">&#x270c;</button>
+        </div>
+
+        <p class="result"></p>
+
+        <p class="your-score">Sua pontuação: <span class="your-points">0</span></p>
+        <p class="computer-score">Pontuação do computer: <span class="computer-points">0</span></p>
+
+    </main>
+
+</body>
+
+</html>
